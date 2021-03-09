@@ -5,12 +5,12 @@ Funcionalidades:
   - Registro de usuarios
   - CRUD
 
-#Stack
-  -HTML
-  -JavaScript
-  -ReactJS
-  -Styled Components
-  -React Router
+*Stack*
+  - HTML
+  - JavaScript
+  - ReactJS
+  - Styled Components
+  - React Router
 
 
-#Live demo -> ...
+Live demo -> ...
