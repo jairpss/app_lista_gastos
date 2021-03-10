@@ -14,10 +14,10 @@ const Header = styled.div`
 `;
  
 const Titulo = styled.h1`
-    font-weight: 500;
+    font-weight: 600;
     text-transform: uppercase;
     font-size: 2.5rem; /* 40px */
-    
+    font-family: 'Quicksand', sans-serif;
  
     @media(max-width: 60rem){ /* 950px */
         font-size: 2rem; /* 32px */

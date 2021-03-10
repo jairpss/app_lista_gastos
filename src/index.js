@@ -16,7 +16,7 @@ import Fondo from './elementos/Fondo';
 
 WebFont.load({
   google: {
-    families: ['Poppins:400,500,700', 'sans-serif']
+    families: ['Quicksand:400,500,700', 'sans-serif']
   }
 });
 

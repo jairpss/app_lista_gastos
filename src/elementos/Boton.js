@@ -9,7 +9,7 @@ const Boton = styled(Link)`
     border: none;
     border-radius: 0.625rem; /* 10px */
     color: #fff;
-    font-family: 'Work Sans', sans-serif;
+    font-family: 'Quicksand', sans-serif;
     height: 3.75rem; /* 60px */
     padding: 1.25rem 1.87rem; /* 20px 30px */
     font-size: 1.25rem; /* 20px */
@@ -20,10 +20,10 @@ const Boton = styled(Link)`
     justify-content: space-between;
     align-items: center;
     outline: none;
-    font-family: "Poppins", sans-serif;
+    
     
     &:hover {
-        background: ${(props) => props.primario ? '#6E7AEA' : '#262626'};
+        background: ${(props) => props.primario ? '#6976E7' : '#262626'};
     }
 
     svg {

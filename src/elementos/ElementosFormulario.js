@@ -1,5 +1,5 @@
 import styled from 'styled-components';
-import theme from './../componentes/theme';
+import theme from './../theme';
 
 const ContenedorFiltros = styled.div`
     display: flex;
@@ -27,7 +27,7 @@ const Formulario = styled.form`
         width: 100%;
         text-align: center;
         padding: 2.5rem 0;
-        font-family: 'Poppins', sans-serif;
+        font-family: 'Quicksand', sans-serif;
         &::placeholder {
             color: rgba(0,0,0,.2);
         }
@@ -40,7 +40,7 @@ const Formulario = styled.form`
  
 const Input = styled.input`
     font-size: 2.5rem; /* 40px */
-    text-transform: uppercase;
+    // text-transform: uppercase;
     border: none;
     border-bottom: 2px solid ${theme.grisClaro};
     outline: none;
