@@ -1,16 +1,19 @@
-# App Lista de Gastos
+# App Lista de Gastos 💰
+
 Esta app muestra el registro de gastos de un usuario.
 
-Funcionalidades:
-  - Registro de usuarios
-  - CRUD
+_Funcionalidades:_ ⚙️
 
-*Stack*
-  - HTML
-  - JavaScript
-  - ReactJS
-  - Styled Components
-  - React Router
+- Registro de usuarios
+- CRUD
 
+_Stack_
 
-Live demo -> ...
+- HTML
+- JavaScript
+- ReactJS
+- Styled Components
+- React Router
+- Firebase
+
+Live demo 👉 ...
