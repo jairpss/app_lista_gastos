@@ -12,7 +12,7 @@ const useAuth = () => {
 
 const AuthProvider = ({children}) => {
     const [usuario, cambiarUsuario] = useState();
-    //Creamos iun state para saber cuando termina de cargar la comprobacion de onAuthStateChanged
+    //Creamos un state para saber cuando termina de cargar la comprobacion de onAuthStateChanged
     const [cargando, cambiarCargando] = useState(true);
 
     //Effect oara ejecutar la comprobacion una sola vez
