@@ -11,7 +11,7 @@ _Stack_
 
 - HTML
 - JavaScript
-- ReactJS
+- ReactJS (Helmet, Day Picker)
 - Styled Components
 - React Router
 - Firebase
