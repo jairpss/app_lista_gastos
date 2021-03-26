@@ -36,13 +36,13 @@ const Index = () => {
               <Route path='/iniciar-sesion' component={InicioSesion}/>
               <Route path='/registro' component={RegistroUsuarios}/>
               
-              <RutaPrivada path='categorias'>
+              <RutaPrivada path='/categorias'>
                 <GastosCategoria />
               </RutaPrivada>
-              <RutaPrivada path='lista-gastos'>
+              <RutaPrivada path='/lista-gastos'>
                 <ListaGastos />
               </RutaPrivada>
-              <RutaPrivada path='editar-gasto/:id'>
+              <RutaPrivada path='/editar-gasto/:id'>
                 <EditarGasto />
               </RutaPrivada>
               <RutaPrivada path='/'>
