@@ -27,7 +27,7 @@ const IconoCategoria = ({id}) => {
         case 'transporte':
             return <IconoTransporte />;
         default:
-        break;
+        return null;
     }
 }
  
