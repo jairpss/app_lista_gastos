@@ -15,7 +15,7 @@ import editarGasto from './../firebase/editarGasto';
 const FormularioGasto = ({gasto}) => {
     const [inputDescripcion, cambiarInputDescripcion] = useState('');
     const [inputCantidad, cambiarInputCantidad] = useState('');
-    const [categoria, cambiarCategoria] = useState('Hogar');
+    const [categoria, cambiarCategoria] = useState('Categoria');  //**** */
     const [fecha, cambiarFecha] = useState(new Date());
     const [estadoAlerta, cambiarEstadoAlerta] = useState(false);
     const [alerta, cambiarAlerta] = useState({});
@@ -75,7 +75,7 @@ const FormularioGasto = ({gasto}) => {
                     uidUsuario: usuario.uid
                 })
                 .then(() => {
-                    cambiarCategoria('hogar');
+                    cambiarCategoria('categoria');  //**** */
                     cambiarInputDescripcion('');
                     cambiarInputCantidad('');
                     cambiarFecha(new Date());
