@@ -2,6 +2,7 @@ import React from 'react';
 import styled from 'styled-components';
 import theme from '../theme';
 import moneda from './../funciones/moneda';
+import {useTotalDelMes} from './../contextos/TotalGastadoMesContext';
 
 const BarraTotal = styled.div`
     background: ${theme.verde};
@@ -23,10 +24,12 @@ const BarraTotal = styled.div`
 `;
 
 const BarraTotalGastos = () => {
+    const {total} = useTotalDelMes();
+
     return ( 
         <BarraTotal>
             <p>Total gastado en el mes:</p>
-            <p>{moneda(0)}</p>
+            <p>{moneda(total)}</p>
         </BarraTotal>
      );
 }

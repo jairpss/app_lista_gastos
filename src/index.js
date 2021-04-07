@@ -15,6 +15,7 @@ import favicon from './imagenes/logo.png';
 import Fondo from './elementos/Fondo';
 import {AuthProvider} from './contextos/AuthContext';
 import RutaPrivada from './componentes/RutaPrivada';
+import {TotalGastadoProvider} from './contextos/TotalGastadoMesContext';
 
 WebFont.load({
   google: {
@@ -30,28 +31,30 @@ const Index = () => {
       </Helmet>
 
       <AuthProvider>
-        <BrowserRouter>
-          <Contenedor>
-            <Switch>
-              <Route path='/iniciar-sesion' component={InicioSesion}/>
-              <Route path='/registro' component={RegistroUsuarios}/>
-              
-              <RutaPrivada path='/categorias'>
-                <GastosCategoria />
-              </RutaPrivada>
-              <RutaPrivada path='/lista-gastos'>
-                <ListaGastos />
-              </RutaPrivada>
-              <RutaPrivada path='/editar-gasto/:id'>
-                <EditarGasto />
-              </RutaPrivada>
-              <RutaPrivada path='/'>
-                <App />
-              </RutaPrivada>
-              
-            </Switch>
-          </Contenedor>
-        </BrowserRouter>
+        <TotalGastadoProvider>
+            <BrowserRouter>
+              <Contenedor>
+                <Switch>
+                  <Route path='/iniciar-sesion' component={InicioSesion}/>
+                  <Route path='/registro' component={RegistroUsuarios}/>
+                  
+                  <RutaPrivada path='/categorias'>
+                    <GastosCategoria />
+                  </RutaPrivada>
+                  <RutaPrivada path='/lista-gastos'>
+                    <ListaGastos />
+                  </RutaPrivada>
+                  <RutaPrivada path='/editar-gasto/:id'>
+                    <EditarGasto />
+                  </RutaPrivada>
+                  <RutaPrivada path='/'>
+                    <App />
+                  </RutaPrivada>
+                  
+                </Switch>
+              </Contenedor>
+            </BrowserRouter>
+        </TotalGastadoProvider>
       </AuthProvider>
       
       <Fondo />

@@ -5,7 +5,7 @@ import BtnRegresar from './../elementos/BtnRegresar';
 import BarraTotalGastos from './BarraTotalGastos';
 import useObtenerGastos from './../hooks/useObtenerGastos';
 import {
-    Lista, ElementoLista, ListaDeCategorias, ElementoListaCategorias,
+    Lista, ElementoLista,
     Categoria, Descripcion, Valor, Fecha, ContenedorBotones, BotonAccion,
     BotonCargarMas, ContenedorBotonCentral, ContenedorSubtitulo, Subtitulo
 } from './../elementos/ElementosDeLista';
@@ -18,6 +18,8 @@ import Boton from './../elementos/Boton';
 import {format, fromUnixTime} from 'date-fns';
 import {es} from 'date-fns/locale';
 import borrarGasto from './../firebase/borrarGasto';
+
+// ListaDeCategorias, ElementoListaCategorias,
 
 const ListaGastos = () => {
     const [gastos, obtenerMasGastos, hayMasPorCargar] = useObtenerGastos();
