@@ -16,4 +16,4 @@ _Stack_
 - React Router
 - Firebase
 
-Live demo 👉 ...
+Live demo 👉 https://app-lista-gastos-3f4aa.web.app/
